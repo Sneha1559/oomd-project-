@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AquaSense | PCCOE Smart Campus</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="app">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+        <div class="logo">
+            <div class="logo-mark">💧</div>
+            <div>
+                <h2>AquaSense</h2>
+                <span>SMART CAMPUS</span>
+            </div>
+        </div>
+
+        <div class="status">
+            <span class="status-dot"></span>
+            <div>
+                <small>SYSTEM STATUS</small>
+                <b>All systems normal</b>
+            </div>
+        </div>
+
+        <nav>
+            <button class="nav active" data-page="dashboard">
+                <span>⌂</span> Dashboard
+            </button>
+
+            <button class="nav" data-page="network">
+                <span>⌁</span> Campus Network
+            </button>
+
+            <button class="nav" data-page="water">
+                <span>◈</span> Water Management
+            </button>
+
+            <button class="nav" data-page="ai">
+                <span>✦</span> AI Predictions
+            </button>
+
+            <button class="nav" data-page="energy">
+                <span>ϟ</span> Energy & Savings
+            </button>
+
+            <button class="nav" data-page="reports">
+                <span>▤</span> Reports
+            </button>
+        </nav>
+
+        <div class="user">
+            <div class="user-avatar">S</div>
+            <div>
+                <b>Sneha Ingale</b>
+                <small>Project Admin</small>
+            </div>
+        </div>
+
+    </aside>
+
+
+    <!-- MAIN -->
+    <main>
+
+        <!-- TOP BAR -->
+        <header>
+
+            <div>
+                <span class="small-title">PCCOE / SMART WATER MANAGEMENT</span>
+                <h1>Campus Water Overview</h1>
+            </div>
+
+            <div class="header-right">
+
+                <div class="weather">
+                    <span>🌧️</span>
+                    <div>
+                        <small>Rainfall</small>
+                        <b>14 mm</b>
+                    </div>
+                </div>
+
+                <div class="weather">
+                    <span>☀️</span>
+                    <div>
+                        <small>Weather</small>
+                        <b>26°C</b>
+                    </div>
+                </div>
+
+                <div class="avatar">S</div>
+
+            </div>
+
+        </header>
+
+
+        <!-- ================= DASHBOARD ================= -->
+
+        <section class="page active" id="dashboard">
+
+            <div class="intro">
+                <div>
+                    <span>LIVE CAMPUS MONITORING</span>
+                    <h2>Smart water. Smarter campus.</h2>
+                    <p>Monitor collection, storage, treatment and reuse from one place.</p>
+                </div>
+
+                <div class="live">
+                    <i></i> Live
+                </div>
+            </div>
+
+
+            <!-- STATS -->
+
+            <div class="stats">
+
+                <div class="stat">
+                    <div class="stat-top">
+                        <span>RAINWATER COLLECTED</span>
+                        <b>💧</b>
+                    </div>
+
+                    <strong>1,20,500 <em>L</em></strong>
+                    <small class="green">↑ 18% this month</small>
+                </div>
+
+
+                <div class="stat">
+                    <div class="stat-top">
+                        <span>INTEGRATED TANK</span>
+                        <b>▣</b>
+                    </div>
+
+                    <strong>78<em>%</em></strong>
+                    <div class="progress">
+                        <i style="width:78%"></i>
+                    </div>
+                    <small>93,600 / 1,20,000 L</small>
+                </div>
+
+
+                <div class="stat">
+                    <div class="stat-top">
+                        <span>WATER USED TODAY</span>
+                        <b>♒</b>
+                    </div>
+
+                    <strong>28,300 <em>L</em></strong>
+                    <small>↓ 8% from yesterday</small>
+                </div>
+
+
+                <div class="stat">
+                    <div class="stat-top">
+                        <span>ESTIMATED SAVING</span>
+                        <b>₹</b>
+                    </div>
+
+                    <strong>₹18,500</strong>
+                    <small>This month</small>
+                </div>
+
+            </div>
+
+
+            <!-- WATER CYCLE + TANK -->
+
+            <div class="main-row">
+
+                <div class="water-cycle card">
+
+                    <div class="card-head">
+                        <div>
+                            <span>WATER MANAGEMENT</span>
+                            <h3>Campus Water Cycle</h3>
+                        </div>
+
+                        <button onclick="openPage('network')">
+                            View network →
+                        </button>
+                    </div>
+
+
+                    <div class="cycle">
+
+                        <div class="cycle-item">
+
+                            <div class="cycle-icon rain">
+                                🌧️
+                            </div>
+
+                            <div>
+                                <b>Collect</b>
+                                <small>Rainwater from rooftops</small>
+                            </div>
+
+                        </div>
+
+                        <div class="arrow">→</div>
+
+                        <div class="cycle-item">
+
+                            <div class="cycle-icon clean">
+                                💧
+                            </div>
+
+                            <div>
+                                <b>Treat</b>
+                                <small>Filter & clean water</small>
+                            </div>
+
+                        </div>
+
+                        <div class="arrow">→</div>
+
+                        <div class="cycle-item">
+
+                            <div class="cycle-icon store">
+                                🛢️
+                            </div>
+
+                            <div>
+                                <b>Store</b>
+                                <small>Underground tank</small>
+                            </div>
+
+                        </div>
+
+                        <div class="arrow">→</div>
+
+                        <div class="cycle-item">
+
+                            <div class="cycle-icon reuse">
+                                ♻️
+                            </div>
+
+                            <div>
+                                <b>Reuse</b>
+                                <small>Toilets · Cleaning · Garden</small>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- TANK -->
+
+                <div class="tank card">
+
+                    <div class="card-head">
+                        <div>
+                            <span>STORAGE</span>
+                            <h3>Integrated Tank</h3>
+                        </div>
+
+                        <b class="healthy">● Healthy</b>
+                    </div>
+
+                    <div class="tank-content">
+
+                        <div class="tank-shape">
+                            <div class="water-level">
+                                <b>78%</b>
+                            </div>
+                        </div>
+
+                        <div class="tank-info">
+
+                            <div>
+                                <span>Capacity</span>
+                                <b>1,20,000 L</b>
+                            </div>
+
+                            <div>
+                                <span>Today's inflow</span>
+                                <b>34,500 L</b>
+                            </div>
+
+                            <div>
+                                <span>Today's outflow</span>
+                                <b>18,200 L</b>
+                            </div>
+
+                            <div>
+                                <span>Overflow</span>
+                                <b class="green">0 L</b>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- QUALITY + AI -->
+
+            <div class="bottom-row">
+
+                <div class="card quality">
+
+                    <div class="card-head">
+                        <div>
+                            <span>WATER QUALITY</span>
+                            <h3>Current Quality</h3>
+                        </div>
+
+                        <b class="healthy">● GOOD</b>
+                    </div>
+
+
+                    <div class="quality-grid">
+
+                        <div>
+                            <span>pH</span>
+                            <b>7.2</b>
+                            <small>Normal</small>
+                        </div>
+
+                        <div>
+                            <span>TDS</span>
+                            <b>320</b>
+                            <small>ppm</small>
+                        </div>
+
+                        <div>
+                            <span>Turbidity</span>
+                            <b>0.5</b>
+                            <small>NTU</small>
+                        </div>
+
+                        <div>
+                            <span>Temperature</span>
+                            <b>24°C</b>
+                            <small>Current</small>
+                        </div>
+
+                    </div>
+
+                    <div class="quality-note">
+                        ✓ Suitable for non-potable reuse
+                    </div>
+
+                </div>
+
+
+                <!-- AI -->
+
+                <div class="card ai">
+
+                    <div class="card-head">
+                        <div>
+                            <span>AI PREDICTION</span>
+                            <h3>Upcoming Water Forecast</h3>
+                        </div>
+
+                        <b class="ai-icon">✦</b>
+                    </div>
+
+
+                    <div class="ai-grid">
+
+                        <div>
+                            <span>Rainfall</span>
+                            <b>42 mm</b>
+                        </div>
+
+                        <div>
+                            <span>Collection</span>
+                            <b>1.60 Lakh L</b>
+                        </div>
+
+                        <div>
+                            <span>Demand</span>
+                            <b>1.05 Lakh L</b>
+                        </div>
+
+                    </div>
+
+
+                    <div class="ai-note">
+                        <b>AI Insight</b>
+                        Maintain sufficient free tank capacity
+                        before the predicted rainfall period.
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= NETWORK ================= -->
+
+        <section class="page" id="network">
+
+            <div class="page-title">
+                <span>⌁</span>
+                <div>
+                    <small>CAMPUS INFRASTRUCTURE</small>
+                    <h2>Campus Water Network</h2>
+                    <p>Rainwater collection network across PCCOE.</p>
+                </div>
+            </div>
+
+            <div class="network card">
+
+                <div class="network-head">
+                    <div>
+                        <span>COLLECTION NETWORK</span>
+                        <h3>All Connected Buildings</h3>
+                    </div>
+
+                    <b class="healthy">● LIVE</b>
+                </div>
+
+                <div class="buildings">
+
+                    <div>Girls Hostel</div>
+                    <div>CS New Building</div>
+                    <div>Admin / IT Department</div>
+                    <div>Mechanical Building</div>
+                    <div>Architecture & Construction</div>
+                    <div>PCP-3</div>
+                    <div>PCP-2</div>
+                    <div>PCP-1</div>
+                    <div>Computer Building</div>
+                    <div>Badminton Hall</div>
+                    <div>SB Patil MBA</div>
+                    <div>Hostel</div>
+
+                    <div class="central-tank">
+                        💧
+                        <b>Integrated<br>Rainwater Tank</b>
+                        <small>78%</small>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= WATER ================= -->
+
+        <section class="page" id="water">
+
+            <div class="page-title">
+                <span>◈</span>
+                <div>
+                    <small>WATER MANAGEMENT</small>
+                    <h2>Collection & Reuse</h2>
+                    <p>Monitor the complete water cycle.</p>
+                </div>
+            </div>
+
+            <div class="water-grid">
+
+                <div class="feature card">
+                    <b>🌧️</b>
+                    <span>COLLECTION</span>
+                    <h2>1,20,500 L</h2>
+                    <p>Rainwater collected from campus rooftops.</p>
+                </div>
+
+                <div class="feature card">
+                    <b>💧</b>
+                    <span>TREATMENT</span>
+                    <h2>Active</h2>
+                    <p>First-flush and filtration system.</p>
+                </div>
+
+                <div class="feature card">
+                    <b>🛢️</b>
+                    <span>STORAGE</span>
+                    <h2>78%</h2>
+                    <p>Current underground tank level.</p>
+                </div>
+
+                <div class="feature card">
+                    <b>♻️</b>
+                    <span>REUSE</span>
+                    <h2>95,200 L</h2>
+                    <p>Available for non-potable use.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= AI ================= -->
+
+        <section class="page" id="ai">
+
+            <div class="page-title">
+                <span>✦</span>
+                <div>
+                    <small>ARTIFICIAL INTELLIGENCE</small>
+                    <h2>AI Water Prediction</h2>
+                    <p>Prediction and intelligent water planning.</p>
+                </div>
+            </div>
+
+            <div class="prediction-grid">
+
+                <div class="prediction card">
+                    <span>RAINFALL FORECAST</span>
+                    <strong>42 mm</strong>
+                    <p>Expected rainfall for upcoming period.</p>
+
+                    <div class="bars">
+                        <i style="height:35%"></i>
+                        <i style="height:55%"></i>
+                        <i style="height:80%"></i>
+                        <i style="height:45%"></i>
+                        <i style="height:90%"></i>
+                        <i style="height:65%"></i>
+                        <i style="height:75%"></i>
+                    </div>
+                </div>
+
+                <div class="prediction card">
+                    <span>PREDICTED COLLECTION</span>
+                    <strong>1.60 Lakh L</strong>
+                    <p>Expected rainwater collection.</p>
+                </div>
+
+                <div class="prediction card">
+                    <span>PREDICTED DEMAND</span>
+                    <strong>1.05 Lakh L</strong>
+                    <p>Expected campus water requirement.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= ENERGY ================= -->
+
+        <section class="page" id="energy">
+
+            <div class="page-title">
+                <span>ϟ</span>
+                <div>
+                    <small>SUSTAINABILITY</small>
+                    <h2>Energy & Cost Savings</h2>
+                    <p>Monitor energy conservation and financial savings.</p>
+                </div>
+            </div>
+
+            <div class="energy-grid">
+
+                <div class="card">
+                    <span>PUMP ENERGY</span>
+                    <strong>12.5 kWh</strong>
+                    <p>Today's consumption</p>
+                </div>
+
+                <div class="card">
+                    <span>SOLAR ENERGY</span>
+                    <strong>18.0 kWh</strong>
+                    <p>Today's generation</p>
+                </div>
+
+                <div class="card saving">
+                    <span>ESTIMATED SAVING</span>
+                    <strong>₹18,500</strong>
+                    <p>This month's saving</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= REPORTS ================= -->
+
+        <section class="page" id="reports">
+
+            <div class="page-title">
+                <span>▤</span>
+                <div>
+                    <small>REPORTS</small>
+                    <h2>Water Management Report</h2>
+                    <p>Current system performance.</p>
+                </div>
+            </div>
+
+            <div class="report card">
+
+                <div>
+                    <span>Rainwater Collected</span>
+                    <b>1,20,500 L</b>
+                </div>
+
+                <div>
+                    <span>Tank Level</span>
+                    <b>78%</b>
+                </div>
+
+                <div>
+                    <span>Water Used Today</span>
+                    <b>28,300 L</b>
+                </div>
+
+                <div>
+                    <span>Reusable Water</span>
+                    <b>95,200 L</b>
+                </div>
+
+                <div>
+                    <span>Estimated Saving</span>
+                    <b>₹18,500</b>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
